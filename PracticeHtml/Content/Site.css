@@ -1,24 +1,103 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-    white-space: normal;
+  white-space: normal;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+  max-width: 280px;
+}
+
+/**************************************************************************/
+
+.form-container {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: #eee;
+  padding: 16px 10px;
+  margin-bottom: 10px;
+}
+
+/***form style default***/
+.form-row {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+  .form-row .form-group {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+    .form-row .form-group .form-label {
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+
+    .form-row .form-group .form-input {
+    }
+
+
+/***form style 2***/
+.form-row-2 {
+  display: flex;
+  margin-bottom: 16px;
+  color: red;
+  font-size: 30px;
+}
+
+  .form-row-2 .form-group {
+    display: flex;
+    align-items: end;
+    margin-right: 16px;
+  }
+
+    .form-row-2 .form-group .form-label {
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+
+    .form-row-2 .form-group .form-input {
+    }
+
+
+
+
+
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  color: red;
+}
+.last-form-row {
+  margin-bottom: 0px;
+}
+.last-form-row-group {
+  margin-right: 4px;
+}
+
+
+
+.w10 {
+  width: 10px;
 }
