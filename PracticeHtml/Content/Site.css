@@ -26,7 +26,7 @@ textarea {
 
 /**************************************************************************/
 
-.form-container {
+.form-style-1 {
   display: inline-flex;
   flex-direction: column;
   border: 1px solid black;
@@ -37,67 +37,46 @@ textarea {
 }
 
 /***form style default***/
-.form-row {
-  display: flex;
+.form-style-1 {
+  display: inline-flex;
+  flex-direction: column;
   margin-bottom: 16px;
 }
 
-  .form-row .form-group {
+  .form-style-1 .row {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  .form-style-1 .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: red;
+  }
+
+  .form-style-1 .group {
     display: flex;
     align-items: center;
     margin-right: 16px;
   }
 
-    .form-row .form-group .form-label {
-      margin-right: 4px;
-      white-space: nowrap;
-    }
-
-    .form-row .form-group .form-input {
-    }
-
-
-/***form style 2***/
-.form-row-2 {
-  display: flex;
-  margin-bottom: 16px;
-  color: red;
-  font-size: 30px;
-}
-
-  .form-row-2 .form-group {
-    display: flex;
-    align-items: end;
-    margin-right: 16px;
+  .form-style-1 .last-group-in-row {
+    margin-right: 4px;
   }
 
-    .form-row-2 .form-group .form-label {
-      margin-right: 4px;
-      white-space: nowrap;
-    }
+  .form-style-1 .label {
+    margin-right: 4px;
+    white-space: nowrap;
+  }
 
-    .form-row-2 .form-group .form-input {
-    }
+  .form-style-1 .input {
+  }
 
-
-
-
-
-.form-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 14px;
-  color: red;
-}
-.last-form-row {
-  margin-bottom: 0px;
-}
-.last-form-row-group {
-  margin-right: 4px;
-}
+  .form-style-1 .last-form-row {
+    margin-bottom: 0px;
+  }
 
 
 
-.w10 {
-  width: 10px;
-}
+
