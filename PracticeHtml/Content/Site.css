@@ -26,67 +26,60 @@ textarea {
 
 /**************************************************************************/
 
-.form-style-1 {
-  display: inline-flex;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 6px;
-  background-color: #eee;
-  padding: 16px 10px;
-  margin-bottom: 10px;
-}
-
-/***common***/
-.horizontal-row {
+.row {
   display: flex;
-}
-
-.vertical-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-/***form style default***/
-.form-horizontal {
-  display: inline-flex;
-  flex-direction: column;
   margin-bottom: 16px;
 }
 
-  .form-horizontal > .title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 14px;
-    color: red;
+  .row.last-row-in-column {
+    margin-bottom: 0px;
   }
 
-  .form-horizontal > .row, .vertical-column > .row {
-    display: flex;
-    margin-bottom: 16px;
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+
+  .last-column-in-row {
+    margin-right: 0px;
   }
 
-    .form-horizontal > .row.no-bottom-margin {
-      margin-bottom: 0px;
-    }
+/***form style default***/
+.form {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 16px;
+}
 
-  .form-horizontal .row > .group {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.hgroup {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+  .hgroup.last-hgroup {
+    margin-right: 0px;
   }
 
-    .form-horizontal .row > .group.no-right-margin {
-      margin-right: 0px;
-    }
-
-  .form-horizontal .row > .group > .label {
+  .hgroup > .label {
     margin-right: 4px;
     white-space: nowrap;
   }
 
-  .form-horizontal  .row > .group > .input {
+  .hgroup > .input {
   }
+
+
+
 
 /***for testing***/
 .red {
