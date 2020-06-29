@@ -1,13 +1,14 @@
 ﻿body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-top: 20px;
+  padding-bottom: 20px;*/
+  padding: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -31,33 +32,33 @@ textarea {
   margin-bottom: 16px;
 }
 
-  .row.last-row-in-column {
+  /*.row.last-row-in-column {
     margin-bottom: 0px;
-  }
+  }*/
 
 .column {
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 16px;
 }
 
-  .last-column-in-row {
+  /*.column.last-column-in-row {
     margin-right: 0px;
-  }
+  }*/
 
-/***form style default***/
 .form {
   display: inline-flex;
   flex-direction: column;
   justify-content: start;
-  margin-bottom: 16px;
+  margin: 10px;
+  /*padding: 10px 10px 14px 10px;*/
+  padding: 10px 0px 0px 10px;
+  border: 1px solid black;
 }
 
 .form-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 14px;
 }
 
 .hgroup {
@@ -66,9 +67,9 @@ textarea {
   margin-right: 16px;
 }
 
-  .hgroup.last-hgroup {
+  /*.hgroup.last-hgroup {
     margin-right: 0px;
-  }
+  }*/
 
   .hgroup > .label {
     margin-right: 4px;
@@ -77,22 +78,3 @@ textarea {
 
   .hgroup > .input {
   }
-
-
-
-
-/***for testing***/
-.red {
-  background-color: lightcoral;
-  border: 1px solid black;
-}
-
-.white {
-  background-color: #d0e2e8;
-  border: 1px solid black;
-}
-
-.blue {
-  background-color: #eee;
-  border: 1px solid black;
-}
